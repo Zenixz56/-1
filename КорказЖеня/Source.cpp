@@ -11,7 +11,19 @@ int main()
 	_setmode(_fileno(stdout), _O_U16TEXT);
 
 	Start();
+	delete[]loginArr;
+	delete[]passArr;
+	delete[]statusArr;
+	delete[]useridArr;
 
+	if (isStorageCreated == true)
+	{
+		delete[]idArr;
+		delete[]nameArr;
+		delete[]countArr;
+		delete[]priceArr;
+	}
+	
 
 	return 0;
 }
